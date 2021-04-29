@@ -1,0 +1,39 @@
+.new-question {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding: 4rem 0;
+  .question-form {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    max-width: 70%;
+    padding: 1rem 2rem;
+    border: 1px solid #000;
+    align-items: center;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    .form-header {
+      font-size: 1.4rem;
+      font-weight: 700;
+      border-bottom: 1px solid #000;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+    }
+    input,
+    button {
+      border: 0;
+      outline: 0;
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid #000;
+      margin-bottom: 1rem;
+      width: 25rem;
+      max-width: 70%;
+    }
+    button {
+      border: 1px solid #000;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+}

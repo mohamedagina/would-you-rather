@@ -1,0 +1,56 @@
+.leaderboard-page {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding: 4rem 0;
+  .leaderboard {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    max-width: 70%;
+    border: 1px solid #000;
+    padding: 2rem;
+    p {
+      margin-top: 0;
+      padding-bottom: 0.5rem;
+      font-size: 1.2rem;
+      span {
+        font-size: 1.4rem;
+        font-weight: 700;
+      }
+    }
+    .user-card {
+      display: flex;
+      align-items: center;
+      padding: 1rem 0;
+      border-top: 1px solid #000;
+      img {
+        width: 20%;
+        border-radius: 50%;
+      }
+      .user-info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+        margin: 0 1rem;
+        span {
+          font-size: 1.3rem;
+          margin-bottom: 1rem;
+        }
+      }
+      .score {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.3rem;
+        margin: 0 1rem;
+        span {
+          font-size: 3rem;
+        }
+      }
+      &.authed {
+        background-color: #eee;
+      }
+    }
+  }
+}

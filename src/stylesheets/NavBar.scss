@@ -1,0 +1,50 @@
+header {
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 5%;
+  font-size: 1.1rem;
+  color: #000;
+  a {
+    margin-left: 1rem;
+    white-space: nowrap;
+    color: #000;
+    text-decoration: none;
+  }
+  nav {
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .user-section {
+    display: flex;
+    justify-content: center;
+    height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    .authed-user {
+      display: flex;
+      width: fit-content;
+      align-items: center;
+      margin: 0 2rem;
+      img {
+        width: 2.5rem;
+        margin-right: 0.5rem;
+        border-radius: 50%;
+      }
+    }
+    .logout {
+      background-color: transparent;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+      font-size: 1.2;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.single-question {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 4rem;
+  .question-card {
+    width: 70%;
+    .question-body .question.result-container {
+      flex-direction: row;
+      .poll-result {
+        flex-grow: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .option-result {
+          display: flex;
+          flex-direction: column;
+          width: 10rem;
+          max-width: 100%;
+          height: auto;
+          font-size: 1.1rem;
+          font-weight: 700;
+          line-height: 1.5rem;
+          margin-bottom: 1rem;
+          padding: 0.5rem;
+          span {
+            font-size: 0.9rem;
+            color: #999;
+          }
+          .progress-bar {
+            width: 100%;
+            background-color: #ddd;
+            .progress {
+              background-color: rgb(37, 211, 139);
+              text-align: center;
+              color: #eee;
+              font-size: medium;
+            }
+          }
+          &.user-answer {
+            position: relative;
+            border: 1px solid rgb(37, 211, 139);
+            border-radius: 0.25rem;
+            &::after {
+              content: 'Your Choice';
+              position: absolute;
+              width: 3rem;
+              height: 3rem;
+              border-radius: 50%;
+              font-size: 0.75rem;
+              color: #eee;
+              text-align: center;
+              background-color: rgb(243, 137, 75);
+              top: -1.5rem;
+              right: -1.5rem;
+            }
+          }
+        }
+      }
+      .author-avatar {
+        width: 25%;
+        padding: 1rem;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.question-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 100%;
+  max-width: 45rem;
+  margin-bottom: 1rem;
+  border: 1px solid #000;
+  .question-header {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #000;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .question-body {
+    .question {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.1rem;
+      a,
+      button {
+        width: fit-content;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: 700;
+        border: 1px solid #000;
+        background-color: transparent;
+      }
+      label {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

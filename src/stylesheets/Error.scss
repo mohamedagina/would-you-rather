@@ -1,0 +1,25 @@
+.error-page {
+  display: flex;
+  width: 100vw;
+  flex-grow: 2;
+  justify-content: center;
+  align-items: center;
+  .error-container {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    max-width: 70%;
+    padding: 2rem;
+    height: fit-content;
+    align-items: center;
+    border: 1px solid #000;
+    font-size: 1.5rem;
+    a {
+      margin-top: 2rem;
+      color: #000;
+      text-decoration: none;
+      border: 1px solid #000;
+      padding: 0.5rem 1rem;
+    }
+  }
+}
